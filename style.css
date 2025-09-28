@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background: #222;
+  padding: 10px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.box {
+  background: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive layout for tablets */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.nav a:hover {
+  color: #ffcc00;
+}
+
+.box:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+
